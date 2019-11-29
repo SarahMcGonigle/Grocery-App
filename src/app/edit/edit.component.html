@@ -1,1 +1,47 @@
-<p>edit works!</p>
+<mat-card>
+    <form (submit)="onEditGrocery(groceryForm)" #groceryForm="ngForm">
+      <mat-form-field>
+          <label> Grocery Name</label>
+        <input
+          matInput
+          type="text"
+          name="name"
+          ngModel={{grocery.name}}
+          required
+          #title="ngModel">
+      </mat-form-field>
+      <mat-form-field>
+          <label>Grocery Price</label>
+        <textarea
+          matInput
+          name="price"
+          ngModel={{grocery.price}}
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <label>Grocery Category</label>
+        <textarea
+          matInput
+         rows="4"
+          name="category"
+          ngModel={{grocery.category}}
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <label>Amount</label>
+        <textarea
+          matInput
+         rows="4"
+          name="amount"
+          ngModel={{grocery.category}}
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit">Edit Grocery</button>
+    </form>
+  </mat-card>

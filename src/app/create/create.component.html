@@ -1,1 +1,48 @@
-<p>create works!</p>
+<mat-card>
+    <form (submit)="onAddGrocery(groceryForm)" #groceryForm="ngForm">
+      <mat-form-field>
+          <label> Grocery Name</label>
+        <input
+          matInput
+          type="text"
+          name="name"
+          ngModel
+          required
+          #title="ngModel">
+      </mat-form-field>
+      <mat-form-field>
+          <label>Grocery Price</label>
+        <textarea
+          matInput
+          name="price"
+          ngModel
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <label>Grocery Category</label>
+        <textarea
+          matInput
+          name="category"
+          ngModel
+          required
+          #content="ngModel"></textarea>
+        </mat-form-field> 
+        <mat-form-field>
+            <label>Amount</label>
+          <textarea
+            matInput
+            name="amount"
+            ngModel
+            required
+            #content="ngModel"></textarea>
+        </mat-form-field>
+  
+
+
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit">Save Grocery</button>
+    </form>
+  </mat-card>
