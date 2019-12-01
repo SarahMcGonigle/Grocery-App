@@ -3,6 +3,12 @@ textarea {
   width: 100%;
 }
 
+
+h2{
+  color: #C71585;
+  text-align:center;
+}
+
 .mat-card{
   background-color: LightSkyBlue ;
   padding: 59px;
