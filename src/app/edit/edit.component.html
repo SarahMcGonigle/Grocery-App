@@ -1,7 +1,7 @@
 <mat-card>
     <form (submit)="onEditGrocery(groceryForm)" #groceryForm="ngForm">
       <mat-form-field>
-          <label> Grocery Name</label>
+          <label><b>Grocery Name:</b></label>
         <input
           matInput
           type="text"
@@ -10,8 +10,9 @@
           required
           #title="ngModel">
       </mat-form-field>
+      <hr>
       <mat-form-field>
-          <label>Grocery Price</label>
+          <label><b>Grocery Price:</b></label>
         <textarea
           matInput
           name="price"
@@ -19,8 +20,9 @@
           required
           #content="ngModel"></textarea>
       </mat-form-field>
+      <hr>
       <mat-form-field>
-          <label>Grocery Category</label>
+          <label><b>Grocery Category:</b></label>
         <textarea
           matInput
          rows="4"
@@ -29,8 +31,9 @@
           required
           #content="ngModel"></textarea>
       </mat-form-field>
+      <hr>
       <mat-form-field>
-          <label>Amount</label>
+          <label><b>Amount:</b></label>
         <textarea
           matInput
          rows="4"
@@ -39,9 +42,11 @@
           required
           #content="ngModel"></textarea>
       </mat-form-field>
+      <hr>
       <button
         mat-raised-button
+        class="editButton"
         color="accent"
-        type="submit">Edit Grocery</button>
+        type="submit">Edit</button>
     </form>
   </mat-card>

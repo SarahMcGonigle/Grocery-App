@@ -1,7 +1,7 @@
 <mat-card>
     <form (submit)="onAddGrocery(groceryForm)" #groceryForm="ngForm">
       <mat-form-field>
-          <label> Grocery Name</label>
+          <label><b>Grocery Name:</b></label>
         <input
           matInput
           type="text"
@@ -10,8 +10,9 @@
           required
           #title="ngModel">
       </mat-form-field>
+      <hr>
       <mat-form-field>
-          <label>Grocery Price</label>
+          <label><b>Grocery Price:</b></label>
         <textarea
           matInput
           name="price"
@@ -19,8 +20,9 @@
           required
           #content="ngModel"></textarea>
       </mat-form-field>
+      <hr>
       <mat-form-field>
-          <label>Grocery Category</label>
+          <label><b>Grocery Category:</b></label>
         <textarea
           matInput
           name="category"
@@ -28,8 +30,9 @@
           required
           #content="ngModel"></textarea>
         </mat-form-field> 
+        <hr>
         <mat-form-field>
-            <label>Amount</label>
+            <label><b>Amount:</b></label>
           <textarea
             matInput
             name="amount"
@@ -37,12 +40,14 @@
             required
             #content="ngModel"></textarea>
         </mat-form-field>
+        <hr>
   
 
 
       <button
+      class="saveButton"
         mat-raised-button
         color="accent"
-        type="submit">Save Grocery</button>
+        type="submit">Save</button>
     </form>
   </mat-card>

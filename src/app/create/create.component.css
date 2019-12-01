@@ -2,3 +2,24 @@ mat-form-field,
 textarea {
   width: 100%;
 }
+
+.mat-card{
+  background-color: LightSkyBlue ;
+  padding: 59px;
+  border-radius: 20px;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  color: 	#C71585;
+  font-size: 20px;
+}
+
+.mat-form-field{
+  padding: 20px;
+}
+
+.mat-form-field:matInput{
+  color: white;
+}
+hr{
+  width: 100%;
+  border: 1px solid white;
+}

@@ -1,6 +1,10 @@
+<h1>Shopping List</h1>
+
+
+
 <mat-accordion *ngFor="let grocery of MyGroceries">
-
-
+<br>
+<mat-card>
     <mat-expansion-panel [expanded]="true" >
     <mat-expansion-panel-header>
     <mat-panel-title>
@@ -19,10 +23,11 @@
 
     <mat-action-row>
 
-    <button mat-button [routerLink]="['/edit', grocery._id]" color="primary">EDIT</button>
+    <button mat-button class="editButton" [routerLink]="['/edit', grocery._id]" color="primary" >Edit</button>
     
-    <button mat-button (click)="onDelete(grocery._id)" color="warn">DELETE</button>
+    <button mat-button class="deleteButton" (click)="onDelete(grocery._id)" color="warn" >Delete</button>
     
     </mat-action-row>
     </mat-expansion-panel>
+  </mat-card>
     </mat-accordion>

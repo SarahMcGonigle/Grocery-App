@@ -1,0 +1,40 @@
+.homeButton{
+    background-image: linear-gradient(to right, MediumVioletRed 0%, #5FC3E4 51%, MediumVioletRed  100%);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 20px;
+    border-radius: 50px;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+
+.readButton, .createButton {
+    background-image: linear-gradient(to right, MediumVioletRed 0%, #5FC3E4 51%, MediumVioletRed  100%);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 20px;
+    border-radius: 50px;
+    margin-right: 5%;
+}
+
+/* change colour for button hover*/
+.homeButton:hover{
+    background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+}
+
+.readButton:hover{
+    background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+}
+
+.createButton:hover{
+    background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+}
+
+h1{
+    text-align: center;
+    margin-left: 275%;
+    color: purple;
+}
+    

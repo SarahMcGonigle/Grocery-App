@@ -1,0 +1,28 @@
+.mat-card{
+    background-color: LightSkyBlue ;
+    padding: 59px;
+    border-radius: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+
+  h1{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    text-align: center;
+    color: MediumVioletRed  ;
+  }
+
+  mat-panel-title{
+      color:MediumVioletRed  ;
+  }
+
+mat-panel-description{
+    color: DarkOliveGreen ;
+}
+
+th{
+    color: MediumVioletRed;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 30px;
+}

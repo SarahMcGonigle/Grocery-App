@@ -2,3 +2,21 @@ mat-form-field,
 textarea {
   width: 100%;
 }
+
+.mat-card{
+  background-color: LightSkyBlue ;
+  padding: 59px;
+  border-radius: 20px;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  color: #C71585;;
+  font-size: 20px;
+}
+
+.editButton:hover{
+  background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+   }
+
+hr{
+    width: 100%;
+    border: 1px solid white;
+  }

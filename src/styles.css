@@ -1,2 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* You can add global styles to this file, and also import other style files 
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
+
+/*general padding for app. Set app font*/
+body, html {
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+body { 
+    margin: 5%; 
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    background-image: linear-gradient(#FFB6C1,#D3D3D3, #FFB6C1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*button styling, gradient, font*/
+.deleteButton, .editButton, .saveButton {
+    background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4 51%, #E55D87 100%);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 20px;
+    width: 100px;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+.deleteButton:hover{
+    background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+}
+
+.editButton:hover{
+    background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+}
+
+.saveButton:hover{
+    background-image: linear-gradient(to right, #C71585 0%, #0000CD 51%, #C71585 100%);
+}
+
+
